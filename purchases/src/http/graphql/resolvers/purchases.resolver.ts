@@ -56,6 +56,7 @@ export class PurchasesResolver {
     return this.purchasesService.createPurchase({
       customerId: customer.id,
       productId: data.productId,
+      authUserId: user.sub,
     });
   }
 }
