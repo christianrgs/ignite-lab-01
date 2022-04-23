@@ -45,7 +45,7 @@ export class PurchasesController {
 
     if (!course) {
       course = await this.coursesService.createCourse({
-        title: payload.product.id,
+        title: payload.product.title,
         slug: payload.product.slug,
       });
     }
